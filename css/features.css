@@ -1089,12 +1089,21 @@ body::after {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
-    position: relative;
-    z-index: 100;
     background: rgba(209, 208, 208, 0.669);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    
+    
+
 }
 
 .logo {
@@ -1105,7 +1114,9 @@ body::after {
     background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    position: relative;
+    animation: logoFloat 3s infinite alternate linear;
+
+
 }
 
 
@@ -1120,6 +1131,17 @@ body::after {
     display: flex;
     gap: 2.5rem;
     list-style: none;
+    margin: auto 0;
+    max-width: 1000%;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .nav a {
@@ -1236,7 +1258,7 @@ body::after {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     padding: 5rem 2rem;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
@@ -1569,7 +1591,7 @@ body::after {
 /* How It Works Section */
 .how-it-works {
     padding: 8rem 2rem;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -1594,7 +1616,7 @@ body::after {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 
 .workflow-container {
