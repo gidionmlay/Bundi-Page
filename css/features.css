@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
+.Contena {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
